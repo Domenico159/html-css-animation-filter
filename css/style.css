@@ -82,3 +82,104 @@
 }
 
 /* Esercizio 10 */
+.ex-10-icon.fas.fa-circle-notch{
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Esercizio 11 */
+@keyframes rotate2 {
+    0%{
+        transform:rotate(0deg)
+    }
+    75%{
+        transform:rotate(270deg)
+    }
+    
+    100%{
+        transform:rotate(0deg)
+    }
+}
+
+
+.ex-11-icon.fas.fa-circle-notch:hover{
+    animation: rotate2 2s ;
+}
+
+/* Esercizio 12 */
+.ex-12-top-white,
+.ex-12-bottom-white{
+    transition: transform 1s;
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    transform: translateX(80px);
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    transform: translateX(-80px);
+}
+
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: rotate-top 2s linear infinite;
+}
+@keyframes rotate-top {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: rotate-bottom 2s linear infinite;
+}
+@keyframes rotate-bottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
